@@ -29,7 +29,7 @@ db.on("error", (error) => console.log("error on db connection: ", error));
 db.once("open", () => console.log("mongoose db connected"));
 
 app.use("/", indexRouter);
-app.use("/country", countryRouter);
+app.use("/api", countryRouter);
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {
